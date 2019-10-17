@@ -1,0 +1,40 @@
+Muntaha Pasha
+
+Part 1:
+ Step 1:
+	A: diff scene1_v1.txt scene2_v2.txt
+	B.  If they're < from first file, > is from the second. 
+	C. diff -c, output NUM (default 3) lines of copied context
+ Step 2:
+	A: grep -n 'pigeon' scene1_v1.txt
+	B: diff scene1_v1.txt scene1_v2.txt | grep '<'sc
+ Step 3:
+	A:  cut -d ':' -f 1 scene1_v1.txt –s
+	B: diff scene1_v1.txt scene1_v2.txt | cut -d ':' -f 1 scene1_v1.txt -s
+
+ Step 4: 
+	A: uniq -d scene1_v1.txt
+	B: diff scene1_v1.txt scene1_v2.txt | grep '<' | cut -d ':' -f 1 -s | sort | uniq - c
+
+Part 2:
+ Step 5: 
+	A: 1: sed 's/[A-Za-z]//g' cryptic.txt
+
+	   2: sed 's/[0-9]/_/g' cryptic.txt
+
+	B: sed 's/4/a/g' cryptic.txt | sed 's/3/e/g' cryptic.txt | sed 's/1/i/g' cryptic.txt | sed 's/0/o/g' cryptic.txt | sed  's/5/s/g' cryptic.txt | sed  's/7/t/g' cryptic.txt
+		Use awk to do without piping.
+ Step 6:
+	A: grep -c '[0-9]\{3\}\-[0-9]\{3\}\-[0-9]\{4\}' regex_practice_data.txt
+		770 phone numbers.
+	B: grep -c "303-441" regex_practice_data.txt
+		51 Boulder Phone Numbers
+ Step 7:
+	A: awk 'NR>1 {print $6/$2}' pizzaOrders.txt
+		5.6
+		5
+		5.35714
+		5.34091
+		
+	B: awk 'NR>1 {total +=$2;cost+=$5} END{print cost/total}' pizzaOrders.txt
+		0.375 answer
