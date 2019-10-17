@@ -1,0 +1,25 @@
+Online Tutorials:
+Shell Scripting: 
+
+http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html 
+
+http://tldp.org/LDP/abs/html
+regex:
+
+http://regexone.com/
+
+http://www.zytrax.com/tech/web/regex.htm
+
+http://docs.python.org/2/howto/regex.html
+
+sed:
+
+http://www.wikiwand.com/en/Sed
+
+https://www.tutorialspoint.com/sed/sed_overview.htm
+
+awk:
+
+www.hcs.harvard.edu/~dholland/computers/awk.html
+
+https://www.digitalocean.com/community/tutorials/how-to-use-the-awk-language-to-manipulate-text-in-Linux
