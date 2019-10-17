@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="UserPage.css">
+<style>
+    body {
+        max-height: 100%;
+        overflow:hidden;
+    }
+</style>
+</head>
+<body style="background-color:lightblue">
+    <div class="row topuser">
+        <div class="col-12">
+            <a class="active" href="#home" id="returnlogo">
+                <b>Back to Menu</b>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <img src="userimg.jpg" alt="user image" id="userimg" style="width: 150px; height: 150px;">
+            <div id="userinfo">
+                <p>Placeholder Name</p>
+                <p>Date Joined: Placeholder</p>
+                <p>Recipes Uploaded: Placeholder</p>
+            </div>
+        </div>
+        <div class="col-6" id="usersearch">
+            <div class="row" style="margin-top: 50px;">
+                <div id="selectdiv" class="form-group col-3">
+                    <select class="form-control">
+                        <option value="recipeselect">Recipe</option>
+                        <option value="ingredientselect">Ingredient</option>
+                        <option value="typeselect">Type</option>
+                    </select>
+                </div>
+                <div class="form-group col-4">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+                <div class="form-group col-4">
+                    <input type="text" class="form-control" placeholder="Max Price">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="tab">
+            <button class="col-4 tablinks" onclick="openTab(event, 'Favorites')">Favorites</button>
+            <button class="col-4 tablinks" onclick="openTab(event, 'CreateRecipe')">Create Recipe</button>
+            <button class="col-4 tablinks" onclick="openTab(event, 'MealPlan')">Meal Plan</button>
+        </div>
+
+        <div id="Favorites" class="tabcontent">
+            <div class="row">
+                <div class="col-3">
+                    <h3>Favorites</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Favorite Recipe Placeholder</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="CreateRecipe" class="tabcontent">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Create Recipe</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="recipename">Recipe Name:</label>
+                            <input type="text" class="form-control" id="recipename">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-4">
+                            <label for="ingredients">Ingredients:</label>
+                            <input type="text" class="form-control" id="ingredients">
+                        </div>
+                        <div class="form-group col-2">
+                            <label for="qty">Qty:</label>
+                            <input type="text" class="form-control" id="qty">
+                        </div>
+                        <div id="unitdiv" class="form-group col-4">
+                            <label for="unit">Unit:</label>
+                            <select class="form-control" id="unit">
+                                <option value="cups">Cups</option>
+                                <option value="gallon">Gallons</option>
+                                <option value="ounce">Ounces</option>
+                                <option value="pinch">Pinch</option>
+                                <option value="pound">Pounds</option>
+                                <option value="quart">Quarts</option>
+                                <option value="tablespoon">Tablespoons</option>
+                                <option value="teaspoon">Teaspoons</option>
+                            </select>
+                            <button type="button" class="btn">Add</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="instructions">Instructions:</label>
+                        <textarea class="form-control" rows="6" id="instructions">	</textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <button type="button" class="btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="addedingredients" class="form-group col-6">
+                    <label for="addedingredients">Added Ingredients:</label>
+                    <textarea class="form-control" rows="6" id="addedingredients">	</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div id="MealPlan" class="tabcontent">
+            <div class="row">
+                <div class="col-3">
+                    <h3>Meal Plan</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Meal Plan Placeholder</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="UserPage.js"></script>
+
+</body>
+</html>

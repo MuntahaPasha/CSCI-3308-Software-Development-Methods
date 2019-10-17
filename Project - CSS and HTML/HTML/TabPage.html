@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="UserPage.css">
+</head>
+<body>
+<div class="tab">
+	<button class="tablinks" onclick="openTab(event, 'Favorites')">Favorites</button>
+	<button class="tablinks" onclick="openTab(event, 'Create Recipe')">Create Recipe</button>
+	<button class="tablinks" onclick="openTab(event, 'Meal Plan')">Meal Plan</button>
+</div>
+
+<div id="Favorites" class="tabcontent">
+	<h3>Favorites</h3>
+	<p><head>
+	<link rel="stylesheet" href="featuredrecipe_styles.css">
+	<title>Featured Recipe</title>
+</head>
+
+<body>
+  <div class="gallery">
+  	<a href="file:///Users/allyarenson/Documents/CS/3104/nutella_ramen.html">
+    	<img src="https://i.ytimg.com/vi/id1EhUpqKTQ/maxresdefault.jpg">
+    </a>
+  <div class="desc">Nutella Ramen</div>
+</div>
+
+<div class="gallery">
+	<a href="file:///Users/allyarenson/Documents/CS/3104/nutella_ramen.html">
+    	<img src="https://www.recipetineats.com/wp-content/uploads/2017/03/Baked-Mac-N-Cheese_2-1.jpg">
+  	</a>
+  <div class="desc">Baked Mac n' Cheese</div>
+</div>
+
+<div class="gallery">
+	<a href="file:///Users/allyarenson/Documents/CS/3104/nutella_ramen.html">
+    	<img src="https://images.media-allrecipes.com/userphotos/250x250/918150.jpg">
+  	</a>
+  <div class="desc">Pumpkin Bread</div>
+</div>
+
+<div class="gallery">
+	<a href="file:///Users/allyarenson/Documents/CS/3104/nutella_ramen.html">
+    	<img src="https://homecookingadventure.com/images/recipes/chicken_wraps_mainimage.jpg">
+  	</a>
+  <div class="desc">Siracha Chicken Wrap</div>
+</div>
+
+<body>
+  <div class="gallery">
+  	<a href="file:///Users/allyarenson/Documents/CS/3104/nutella_ramen.html">
+    	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI23Meyn6kRyvjEcrVwHXwlBhkCRUHr-kjYBSs6OuOOfREymTT9w">
+    </a>
+  <div class="desc">Carrot Cake</div>
+</div>
+
+<div class="gallery">
+	<a href="file:///Users/allyarenson/Documents/CS/3104/nutella_ramen.html">
+    	<img src="https://www.averiecooks.com/wp-content/uploads/2016/02/chickenfriedrice-10.jpg">
+  	</a>
+  <div class="desc">Chicken Fried Rice</div>
+</div>
+
+<div class="gallery">
+	<a href="file:///Users/allyarenson/Documents/CS/3104/nutella_ramen.html">
+    	<img src="https://minimalistbaker.com/wp-content/uploads/2015/08/AMAZING-Vegan-Ramen-with-just-10-ingredients-Simple-methods-plant-based-SO-delicious-vegan-recipe-ramen-soup-healthy-dinner.jpg">
+  	</a>
+  <div class="desc">Vegan Ramen</div>
+</div>
+
+</body>
+</div>
+
+<div id="Create Recipe" class="tabcontent">
+	<div class="row">
+	<div class="col-2">
+	<h3>Create Recipe</h3>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-6">
+	<p>Recipe Name</p>
+	<input type="text" placeholder="Name..." size="48">
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-2">
+	<p>Ingredients</p>
+	<input type="text" placeholder="Ingredient...">
+	</div>
+	<div class="col-1">
+	<p>Qty</p>
+	<input type="text" placeholder="#" size="3">
+	</div>
+	<div class="col-2">
+	<p>Unit</p>
+	<select>
+		<option value="cups">Cups</option>
+		<option value="gallon">Gallon</option>
+		<option value="ounce">Ounce</option>
+		<option value="pinch">Pinch</option>
+		<option value="pound">Pound</option>
+		<option value="quart">Quart</option>
+		<option value="tablespoon">Tablespoon</option>
+		<option value="teaspoon">Teaspoon</option>
+	</select>
+	<button type="button">Add</button>
+	</div>
+	</div>
+	<div class="form-group col-6">
+	<label for="instructions">Instructions:</label>
+	<textarea class="form-control" rows="6" id="instructions"></textarea>
+	</div>
+</div>
+
+<div id="Meal Plan" class="tabcontent">
+	<h3>Meal Plan</h3>
+	<p>Meal Plan Placeholder</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="UserPage.js"></script>
+</body>
+</html>

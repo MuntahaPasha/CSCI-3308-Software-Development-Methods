@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="UserPage.css">
+<style>     
+    select{
+        padding-top: 8px;
+        padding-bottom: 6px;
+        margin-right: -.2em;
+    }
+    body{
+      background-image: url("https://us.123rf.com/450wm/orfeev/orfeev1503/orfeev150300005/40367152-seamless-food-and-drink-background.jpg?ver=6");
+    }
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">My Recipes</a>
+  <a href="#">Liked Recipes</a>
+  <a href="#">Top Recipes</a>
+  <a href="#">Contact</a>
+</div>
+<div class="row topnav">
+    <div class="col-3">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a class="active" href="#home" id="logo"><img src="OfficialLogo.png" alt="Avatar" style="max-height: 200px; max-width: 100px"></a>
+    </div>
+    <div class="form-group col-1">
+        <select class="form-control" id="homeselect">
+            <option value="recipeselect">Recipe</option>
+            <option value="ingredientselect">Ingredient</option>
+            <option value="typeselect">Type</option>
+        </select>
+    </div>
+    <div class="form-group col-2">
+        <input type="text" class="form-control" id="search" placeholder="Search...">
+    </div>
+    <div class="form-group col-2">
+        <input type="number" class="form-control" id="maxprice" placeholder="Max Price" min = "0" max = "10000">
+    </div>
+    <div class="col-4"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        <!-- <a href="#login" id="login">Login</a> -->
+    </div>
+</div>
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
+      <img src="OfficialLogo.png" alt="Avatar" style="max-height: 400px; max-width: 600px">
+    </div>
+    <div class="container" >
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" maxlength="20" required>
+      <br>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" maxlength="20" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <br>
+      <span class="new">New User <a href="#", onclick="document.getElementById('id02').style.display = 'block'" onclick="document.getElementById('id01').style.display='none'">Sign up</a></span>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw" style="float: left">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<div id ="id02" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+      <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
+      <img src="OfficialLogo.png" alt="Avatar" style="max-height: 400px; max-width: 600px">
+    </div>
+    <div class="container">
+          <label for="name">Username</label>
+          <input type="name" class="form-control" id="name" placeholder="Enter Username" maxlength="30">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" maxlength="64">
+          <label for="password">Password</label>
+          <input type="password" class = "form-control" id = "password" placeholder="Enter Password (Max 20 Characters" maxlength="20">
+          <button type="submit">Sign up</button>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn" float = "left">Cancel</button>
+    </div>
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+var modal2 = document.getElementById('id02');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+window.onclick = function(event){
+    if(event.target == modal2){
+      modal2.style.display = "none";
+    }
+}
+</script>
+<script>
+/*sidenav*/
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+} 
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="UserPage.js"></script>
+</body>
+</html>

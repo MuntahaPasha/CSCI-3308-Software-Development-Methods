@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<html lang="en">
+<head>
+	<title>User Login</title>
+	<link rel="stylesheet" type="text/css" href="signUp.css">
+</head>
+<body>
+	<div class="containter-fluid">
+      <br>
+      <br>
+		<h1><center>Log in Page</center></h1>
+    <br>
+    <br>
+    <br>	
+	<form action="/action_page.php">
+ 		<div class="form-group">
+			<label for="username">Username</label>
+			<br>
+			<input type="name" class ="form-control" name="firstinput" id="username" placeholder="Enter Username" maxlength="20">
+		</div>
+		<br>
+		<br>
+		<div class="form-group">
+			<label for="username"><b>Password</b></label>
+			<br>
+			<input type="text" class ="form-control" name="firstinput" placeholder="Enter Password" maxlength="12" >
+		</div>
+		<br><br><br><br>
+		<button type="Login" class="btn btn-success green-background">Login</button>
+		<br><br>
+		<script>
+    	document.write('<a href="' + document.referrer + '">Need to sign up? sign up.</a>');
+</script>
+	</form>
+	</div>
+</body>
+</html>

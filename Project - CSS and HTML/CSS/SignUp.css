@@ -1,0 +1,55 @@
+.form-group {
+
+height: 25px !important;
+
+width: 400px !important;
+
+font-size: 14px !important;
+
+margin:0 auto;
+	width: 250px;
+
+}
+
+h1{
+	margin:0 auto;
+	width: 250px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+div{
+    text-align:center;
+    background-color: #ddd;
+}
+
+body
+{
+	background-color: #ddd;
+}
+
+.dark-background{
+background-color: #4e565f;
+color:white;
+border-radius: 5px;
+
+}
+.green-background{
+background-color: #00972c;
+color:white;
+border-radius: 5px;
+
+}
+.navbar-nav>li>a{
+padding-top: 5px;
+padding-bottom: 5px;
+}
+.nav>li>a:hover, .nav>li>a:focus, .nav>li>a:active{
+color:white;
+background-color: #3b4046;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+color:white;
+background-color: #3b4046;
+border:#4e565f;
+}
